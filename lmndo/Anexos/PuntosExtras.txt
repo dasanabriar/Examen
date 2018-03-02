@@ -1,0 +1,12 @@
+1-Dar alguna solución sobre qué pasa con una llamada cuando no
+  hay ningún empleado libre.
+  
+  * Se uso la clase PriorityBlockingQueue de java.util.concurrent la cual al utilizar el metodo
+	take() realiza un wait() hasta que el objeto deja de estar vacio, asi que al desocuparce 
+	un empleado se toma y se asigna a una llamada en cola.
+	
+2-Dar alguna solución sobre qué pasa con una llamada cuando
+  entran más de 10 llamadas concurrentes.
+  
+  * De igual forma que el punto 1. al usar la clase PriorityBlockingQueue las llamdas quedan en cola
+	hasta que se desocupe un empleado.
